@@ -1,0 +1,19 @@
+jari@STARIT36:~/testing/devops_with_docker/part1/1.4$ docker run -d -it --name clock devopsdockeruh/exec_bash_exercise
+2a9796e19a589ce2df752cae509f9c95d60a4264e7f076f763ebe5571b92cd9e
+jari@STARIT36:~/testing/devops_with_docker/part1/1.4$ docker exec -it clock bash
+root@2a9796e19a58:/usr/app# tail -f ./logs.txt
+Wed, 22 Apr 2020 17:23:08 GMT
+Wed, 22 Apr 2020 17:23:11 GMT
+Secret message is:
+"Docker is easy"
+Wed, 22 Apr 2020 17:23:17 GMT
+Wed, 22 Apr 2020 17:23:20 GMT
+Wed, 22 Apr 2020 17:23:23 GMT
+Wed, 22 Apr 2020 17:23:26 GMT
+Secret message is:
+"Docker is easy"
+Wed, 22 Apr 2020 17:23:32 GMT
+^C
+root@2a9796e19a58:/usr/app# ^C
+root@2a9796e19a58:/usr/app# exit
+exit
